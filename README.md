@@ -40,6 +40,12 @@ job = bq.export_csv(
 job.state # => 'DONE'
 ```
 
+#### Download csv as a dataframe
+```python
+df = bq.download_df('gs://my-bucket/dataset/table.csv')
+df
+```
+
 #### Delete table
 ```python
 job = bq.delete_table('temp.test1')
