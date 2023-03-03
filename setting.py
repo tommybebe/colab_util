@@ -16,5 +16,5 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 sns.set(rc={'figure.figsize':(12, 6)})
 
 
-def auth():
+def run():
     auth.authenticate_user()
